@@ -1,9 +1,9 @@
 // add draggable="true" to the element which shall become draggable
 console.log("script.js loaded");
 
-const FOB = document.querySelector(".box");
+/* const FOB = document.querySelector(".box");
 FOB.setAttribute("draggable", "true");
-FOB.setAttribute("ondragstart", "onDragStart(event)");
+FOB.setAttribute("ondragstart", "onDragStart(event)"); */
 
 let offsetX;
 let offsetY;
