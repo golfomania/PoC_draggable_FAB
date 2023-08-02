@@ -21,7 +21,6 @@ drop_handler = function (ev) {
   const left = parseInt(id2.style.left);
   const top = parseInt(id2.style.top);
 
-  id1.style.position = "absolute";
   id1.style.left = ev.clientX - left - offsetX + "px";
   id1.style.top = ev.clientY - top - offsetY + "px";
   id2.appendChild(document.getElementById("id1"));
