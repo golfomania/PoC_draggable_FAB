@@ -13,6 +13,8 @@ onDragStart = function (ev) {
 
   offsetX = ev.clientX - rect.x;
   offsetY = ev.clientY - rect.y;
+  //make element with the id "id2" visible
+  document.getElementById("id2").style.visibility = "visible";
 };
 
 drop_handler = function (ev) {
@@ -24,6 +26,7 @@ drop_handler = function (ev) {
   id1.style.left = ev.clientX - left - offsetX + "px";
   id1.style.top = ev.clientY - top - offsetY + "px";
   id2.appendChild(document.getElementById("id1"));
+  document.getElementById("id2").style.visibility = "hidden";
 };
 
 dragover_handler = function (ev) {
