@@ -11,8 +11,14 @@
 
 // ==/UserScript==
 
-(function() {
-  'use strict';
+(function () {
+  "use strict";
 
-  // Your code here...
+  const interval = setInterval(function () {
+    const supportLauncher = document.querySelector("iframe#launcher-frame");
+    if (supportLauncher) {
+      clearInterval(interval);
+      alert("supportLauncher found");
+    }
+  }, 1000);
 })();
