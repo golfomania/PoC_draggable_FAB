@@ -70,6 +70,6 @@ function addElements() {
   dropZone.style.left = "22px";
   dropZone.style.border = "1px solid #64be3c";
   dropZone.style.cursor = "pointer";
-  dropZone.style.visibility = "hidden";
+  dropZone.style.visibility = "visible";
   document.body.appendChild(dropZone);
 }
