@@ -57,6 +57,7 @@ function addElements() {
   const supportLauncher = document.querySelector("iframe#launcher-frame");
   supportLauncher.setAttribute("draggable", "true");
   supportLauncher.setAttribute("ondragstart", "onDragStart(event)");
+  supportLauncher.style.position = "absolute";
 
   // add a drop zone for the FOB to the DOM
   const dropZone = document.createElement("div");
